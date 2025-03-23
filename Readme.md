@@ -13,5 +13,4 @@ rm -rf setup
 curl -L -o "installer" "github.com/itsmejeeban/scb/raw/refs/heads/main/installer"
 
 chmod +x installer
-
 ./installer
