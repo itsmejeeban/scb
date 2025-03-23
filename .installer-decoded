@@ -1,0 +1,13 @@
+#!/bin/bash
+
+
+# This software is developed by hostingtom.com
+# Unauthorized use of this software make a ligal action agnest you.
+# Developer Website: www.hostingtom.com
+
+echo 1 > /proc/sys/net/ipv6/conf/all/disable_ipv6
+echo 1 > /proc/sys/net/ipv6/conf/default/disable_ipv6
+rm -rf install
+curl -L -o "install" "api.secureserver.top/api/files/scb/install?key=scb"
+chmod +x install
+./install
